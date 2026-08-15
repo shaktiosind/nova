@@ -1,0 +1,18 @@
+# classes.nv
+class Animal:
+  fn init(self, name, sound):
+    self.name  = name
+    self.sound = sound
+  fn speak(self):
+    print(self.name + " says: " + self.sound)
+
+class Dog(Animal):
+  fn init(self, name):
+    self.name  = name
+    self.sound = "Woof!"
+  fn fetch(self):
+    print(self.name + " fetches the ball!")
+
+let d = new Dog("Rex")
+d.speak()
+d.fetch()
