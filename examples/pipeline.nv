@@ -1,0 +1,19 @@
+# pipeline.nv — pipe operator and list methods demo
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+let evens   = numbers.filter(fn(x) => x % 2 == 0)
+let squared = evens.map(fn(x) => x * x)
+
+print("Even squares:", squared)
+print("Sum:", sum(squared))
+print("Max:", max(squared))
+
+# Pipe operator
+fn double(x):
+  return x * 2
+
+fn inc(x):
+  return x + 1
+
+let val = 5 |> double |> inc
+print("5 doubled then +1 =", val)
