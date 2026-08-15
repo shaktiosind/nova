@@ -1,0 +1,45 @@
+{
+  "name": "nova-lang",
+  "version": "1.1.0",
+  "description": "A simple, readable programming language for beginners and real scripting.",
+  "main": "dist/main.js",
+  "bin": {
+    "nova": "./bin/nova"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "repl": "node dist/main.js",
+    "dev": "tsc && node dist/main.js",
+    "check": "node dist/main.js check",
+    "test": "npm run build && node tests/run-tests.js",
+    "pack": "npm pack"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "examples",
+    "nova-min.js",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "CODE_OF_CONDUCT.md",
+    "docs"
+  ],
+  "keywords": [
+    "programming-language",
+    "scripting-language",
+    "beginner",
+    "interpreter",
+    "nova"
+  ]
+}
