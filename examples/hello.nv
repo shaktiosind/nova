@@ -1,0 +1,8 @@
+# hello.nv — your first Nova program
+print("Hello from Nova!")
+
+let name = "World"
+print("Hello,", name)
+
+for i in 1..=5:
+  print("Count:", i)
