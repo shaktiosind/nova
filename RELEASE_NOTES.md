@@ -1,40 +1,20 @@
-# Nova 1.1.0 — Robust & Beginner-Friendly
+# Nova v2.0.1
 
-Nova 1.1.0 is the first release prepared for public developer preview.
+Nova v2.0.1 is a runtime-hardening release. The goal is to make Nova substantially more robust without making beginner programs more complicated.
 
 ## Highlights
 
-- Beginner-friendly dynamic scripting language.
-- Indentation-based blocks with no semicolons or braces.
-- First-class functions and closures.
-- Classes and inheritance.
-- Pattern matching with guards, map patterns, and simple OR patterns.
-- Functional list pipelines.
-- Safer arithmetic and clearer runtime errors.
-- Helpful variable-name suggestions.
-- Multi-line REPL support.
-- `nova run`, `nova check`, `nova version`, and other CLI commands.
-- Browser runtime bundle.
-- Regression tests for core language behavior.
+- Real SQLite database handles
+- SQL identifier validation
+- Safer HTTP client/server runtime
+- Request/response limits
+- Safe execution mode
+- Default HTML escaping
+- Explicit trusted HTML via `gui_raw()`
+- Correct short-circuit evaluation
+- Descending ranges
+- Better function-call diagnostics
+- Improved CLI and REPL
+- 15 regression tests
 
-## Known limitations
-
-Nova is still an early-stage language. It does not yet provide a mature module
-system, package manager, production-grade debugger, database stack, web
-framework, or native application toolchain.
-
-Those are intentionally future ecosystem work rather than reasons to make the
-core language more complicated today.
-
-## Recommended use
-
-Use this release for:
-
-- learning programming;
-- experimenting with language design;
-- small scripts;
-- educational projects;
-- prototypes;
-- testing the Nova language and runtime.
-
-For large production systems, Nova is not yet recommended.
+The complete hardened build was compiled and tested locally. The packaged artifact is available in the ChatGPT conversation as `Nova_Language_v2.0.1_Hardened.zip`.
